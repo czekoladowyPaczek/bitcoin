@@ -41,9 +41,12 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -52,14 +55,30 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\Net\include;C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BitcoinMessage.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="MainMiner.h" />
+    <ClInclude Include="MessageFactory.h" />
+    <ClInclude Include="MessageListener.h" />
+    <ClInclude Include="Worker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BitcoinMessage.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainMiner.cpp" />
+    <ClCompile Include="MessageFactory.cpp" />
+    <ClCompile Include="MessageListener.cpp" />
+    <ClCompile Include="Worker.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
