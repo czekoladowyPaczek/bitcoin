@@ -17,12 +17,23 @@ void Worker::run(){
 	if(listener){
 		listener->onMessage(new BitcoinMessage("22", 2));
 	}
-	char buff[1024];
+	char buff[2048];
+	int position;
+	int oldPosition;
 	while(running){
 		int size = socket.receiveBytes(buff, 2048);
-		if(listener){
-			listener->onMessage(new BitcoinMessage(buff, size));
-		}
+		std::string message(buff, size);
+		std::cout << message << std::endl;
+		position = 0;
+		oldPosition = 0;
+		do{
+			position = message.find('\n', position) + 1;
+
+			if(listener){
+				listener->onMessage(new BitcoinMessage(message.substr(oldPosition, position - oldPosition)));
+			}
+			oldPosition = position;
+		} while(position != message.length());
 	}
 }
 

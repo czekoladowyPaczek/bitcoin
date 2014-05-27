@@ -67,6 +67,8 @@
   <ItemGroup>
     <ClInclude Include="BitcoinMessage.h" />
     <ClInclude Include="Constants.h" />
+    <ClInclude Include="jansson\jansson.h" />
+    <ClInclude Include="jansson\jansson_config.h" />
     <ClInclude Include="MainMiner.h" />
     <ClInclude Include="MessageFactory.h" />
     <ClInclude Include="MessageListener.h" />

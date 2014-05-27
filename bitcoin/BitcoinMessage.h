@@ -6,6 +6,7 @@ class BitcoinMessage
 {
 public:
 	BitcoinMessage(char* buff, int size);
+	BitcoinMessage(std::string messsage);
 	~BitcoinMessage(void);
 
 	std::string getMessage(){
