@@ -15,7 +15,7 @@ Worker::~Worker(void){
 void Worker::run(){
 	socket.connect(socketAddr);
 	if(listener){
-		listener->onMessage(new BitcoinMessage("22", 2));
+		listener->onMessage(new BitcoinMessage("22"));
 	}
 	char buff[2048];
 	int position;

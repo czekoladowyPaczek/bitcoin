@@ -61,7 +61,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:\Projekty c++\bitcoin\bitcoin\lib;C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>jansson.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
