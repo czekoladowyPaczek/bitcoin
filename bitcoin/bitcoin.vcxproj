@@ -41,12 +41,12 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Marcin\Downloads\poco-1.4.6p4\poco-1.4.6p4\Util\include;C:\Users\Marcin\Downloads\poco-1.4.6p4\poco-1.4.6p4\Net\include;C:\Users\Marcin\Downloads\poco-1.4.6p4\poco-1.4.6p4\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Marcin\rownolegle-projekt\rownolegle\bitcoin\lib;C:\Users\Marcin\Downloads\poco-1.4.6p4\poco-1.4.6p4\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>jansson.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -55,13 +55,13 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\Net\include;C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Marcin\Downloads\poco-1.4.6p4\poco-1.4.6p4\Net\include;C:\Users\Marcin\Downloads\poco-1.4.6p4\poco-1.4.6p4\Foundation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>E:\Projekty c++\bitcoin\bitcoin\lib;C:\Users\Krzychu\Downloads\poco-1.4.6p4\poco-1.4.6p4\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\Marcin\rownolegle-projekt\rownolegle\bitcoin\lib;C:\Users\Marcin\Downloads\poco-1.4.6p4\poco-1.4.6p4\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>jansson.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>

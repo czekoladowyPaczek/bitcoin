@@ -15,5 +15,9 @@ public:
 	void onMessage(BitcoinMessage* message);
 private:
 	Worker serverThread;
+
+	int difficulty;
+	int nonceSize;
+	std::string extraNonce1;
 };
 

@@ -8,7 +8,6 @@ int main(){
 
 	int zz;
 	std::cin >> zz;
-
 	return 0;
 
 }
